@@ -2,6 +2,8 @@ html,
 body {
   padding: 0 !important;
   overflow: overlay;
+  max-width: 425px;
+  margin: 0 auto;
 }
 
 a {
