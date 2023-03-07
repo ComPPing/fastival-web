@@ -76,7 +76,15 @@ const palette = {
 
 const colors = {
   text: {
-    primary: palette.black.default,
+    default: palette.black.default,
+    primary: palette.primary,
+    white: palette.white.default,
+  },
+  menubar: {
+    primary: palette.primary.default,
+  },
+  button: {
+    primary: palette.primary.default,
   },
 } as const
 
@@ -108,10 +116,12 @@ const devices = {
   desktop: `@media only screen and (max-width: 1440px)`,
 } as const
 
-const theme = {
+export type ColorType = typeof colors
+export type FontType = typeof fonts
+export type DeviceType = typeof devices
+
+export const theme = {
   fonts,
   colors,
   devices,
 } as const
-
-export default theme
