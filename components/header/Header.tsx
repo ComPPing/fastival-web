@@ -1,22 +1,15 @@
 import React from 'react'
-import styled from '@emotion/styled'
+
+import * as style from './Header.style'
 
 const Header = () => {
   return (
-    <Container>
-      <MenuButton className="material-symbols-outlined">menu</MenuButton>
-    </Container>
+    <style.Container>
+      <style.MenuButton className="material-symbols-outlined md-30">
+        menu
+      </style.MenuButton>
+    </style.Container>
   )
 }
 
 export default Header
-
-const Container = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-`
-
-const MenuButton = styled.button`
-  color: ${({ theme }) => theme.colors.menubar.primary};
-`
