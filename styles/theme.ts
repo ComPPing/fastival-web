@@ -86,6 +86,9 @@ const colors = {
   button: {
     primary: palette.primary.default,
   },
+  background: {
+    primary: palette.primary,
+  },
 } as const
 
 const fontSize = {
