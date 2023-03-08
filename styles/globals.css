@@ -1,9 +1,9 @@
 html,
 body {
   padding: 0 !important;
-  overflow: overlay;
   max-width: 425px;
   margin: 0 auto;
+  scrollbar-gutter: auto;
 }
 
 a {
@@ -70,6 +70,9 @@ li {
 }
 .md-28 {
   font-size: 28px !important;
+}
+.md-30 {
+  font-size: 30px !important;
 }
 .md-36 {
   font-size: 36px !important;
