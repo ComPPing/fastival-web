@@ -4,6 +4,7 @@ import { ThemeProvider } from '@emotion/react'
 
 import { theme } from '@/styles/theme'
 import '@/styles/globals.css'
+import { Toaster } from 'react-hot-toast'
 
 const NotoSansKR = Noto_Sans_KR({
   weight: ['400', '700', '900'],
@@ -13,16 +14,13 @@ const NotoSansKR = Noto_Sans_KR({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
-      />
       <style jsx global>{`
         html {
           font-family: ${NotoSansKR.style.fontFamily};
         }
       `}</style>
       <ThemeProvider theme={theme}>
+        <Toaster />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
