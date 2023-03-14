@@ -11,6 +11,10 @@ export default function Document() {
         />
         <link rel="icon" href="/favicon/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* pwa */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#530086" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png"></link>
         {/* <!-- Primary Meta Tags --> */}
         <title>Fast!val</title>
         <meta name="title" content="Fast!val" />
